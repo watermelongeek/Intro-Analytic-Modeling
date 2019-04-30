@@ -1,0 +1,512 @@
+ansList[i] = ans == data[10,]
+}
+ansListFinal[j] = ansList
+}
+scores <- c()
+for (i in 1:length(ansListFinal)) {
+scores[i] <- sum(ansListFinal[i]) / length(ansListFinal)
+}
+SCORES
+scores
+ansListFinal
+ansList
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+data.train <- data[sample,]
+data.test <- data[-sample,]
+# Build model and predict
+k <- c(3, 5, 7, 9, 11, 13)
+ansListFinal = c()
+for (j in 1:length(k)){
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(V11~V1+V2+V3+V4+V5+V6+V7+V8+V9+V10,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,]
+}
+ansListFinal[j] = ansList
+}
+scores <- c()
+for (i in 1:length(ansListFinal)) {
+scores[i] <- sum(ansListFinal[i]) / length(ansListFinal)
+}
+scores
+head(data)
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+data.train <- data[sample,]
+data.test <- data[-sample,]
+# Build model and predict
+k <- c(3, 5, 7, 9, 11, 13)
+ansListFinal = c()
+for (j in 1:length(k)){
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~A1+A2+A3+A4+A5+A6+A7+A8+A9+A10,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,]
+}
+ansListFinal[j] = ansList
+}
+scores <- c()
+for (i in 1:length(ansListFinal)) {
+scores[i] <- sum(ansListFinal[i]) / length(ansListFinal)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~A1+A2+A3+A4+A5+A6+A7+A8+A9+A10,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,]
+}
+ansListFinal[j] = ansList
+}
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~A1+A2+A3+A4+A5+A6+A7+A8+A9+A10,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,]
+}
+head(data)
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,]
+}
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,]
+ansList[i] = (ans == data[10,])
+ans
+data[10,0]
+data[10,]
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[10,11])
+}
+ansList
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+ansList
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+# Build model and predict
+k <- c(3, 5, 7, 9, 11, 13)
+ansListFinal = c()
+for (j in 1:length(k)){
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~A1+A2+A3+A4+A5+A6+A7+A8+A9+A10,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,11]
+}
+ansListFinal[j] = ansList
+}
+scores <- c()
+for (i in 1:length(ansListFinal)) {
+scores[i] <- sum(ansListFinal[i]) / length(ansListFinal)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+# Build model and predict
+k <- c(3, 5, 7, 9, 11, 13)
+ansListFinal = c()
+for (j in 1:length(k)){
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = ans == data[10,11]
+}
+ansListFinal[j] = ansList
+}
+scores <- c()
+for (i in 1:length(ansListFinal)) {
+scores[i] <- sum(ansListFinal[i]) / length(ansListFinal)
+}
+scores
+ansList
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+ansList
+sum(ansList)
+sum(ansList)/length(ansList)
+k[j]
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c()
+k <- c(1,3,5,7,9,11)
+for (j in 1:length(j)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+k <- c(1,3,5,7,9,11)
+for (j in 1:length(j)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+k <- c(1,3,5,7,9,11)
+for (j in 1:length(k)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=k[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+kvalue <- c(1,3,5,7,9,11)
+for (j in 1:length(k)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-10,], data[10,],
+k=kvalue[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+kvalue <- c(1,3,5,7,9,11)
+for (j in 1:length(k)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-i,], data[i,],
+k=kvalue[j],
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+kvalue <- c(1,3,5,7,9,11)
+for (j in 1:length(k)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-i,], data[i,],
+k=kvalue[j],
+kernel="optimal",
+distance=2
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+scores
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+kvalue <- c(1,3,5,7,9,11)
+for (j in 1:length(k)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-i,], data[i,],
+k=kvalue[j],
+kernel="optimal",
+distance=2,
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+scores
+which(scores==max(scores))
+3[1]
+which(scores==max(scores))[1]
+best_k <- kvalue[which(scores==max(scores))[1]]
+best_k
+kknn <- kkn(R1~.,
+data[,1:10],
+data[,11],
+k=best_k,
+kernel="optimal",
+distance=2,
+scale=TRUE)
+kknn <- kknn(R1~.,
+data[,1:10],
+data[,11],
+k=best_k,
+kernel="optimal",
+distance=2,
+scale=TRUE)
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+kvalue <- c(1,3,5,7,9,11)
+for (j in 1:length(k)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-i,1:10], data[i,11],
+k=kvalue[j],
+kernel="optimal",
+distance=2,
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+best_k <- kvalue[which(scores==max(scores))[1]]
+kknn <- kknn(R1~.,
+data[,],
+data[,],
+k=best_k,
+kernel="optimal",
+distance=2,
+scale=TRUE)
+a <- colSums(kknn@xmatrix[[1]])
+??kknn
+rm(list=ls())
+install.packages("kernlab")
+install.packages("kernlab")
+knitr::opts_chunk$set(echo = TRUE)
+# Install dependencies
+library(kknn)
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+data <- read.table("credit_card_data-headers.txt", stringsAsFactors=FALSE, header=TRUE)
+sample <- sample(1:nrow(data), floor(nrow(data)*0.6))
+scores <- c(1, 1, 1, 1, 1, 1)
+kvalue <- c(1,3,5,7,9,11)
+for (j in 1:length(k)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-i,], data[i,],
+k=kvalue[j],
+kernel="optimal",
+distance=2,
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+for (j in 1:length(kvalue)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-i,], data[i,],
+k=kvalue[j],
+kernel="optimal",
+distance=2,
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+for (j in 1:length(kvalue)) {
+i=1:654
+ansList = c()
+# loop through each row of the data
+for (i in 1:654){
+# build model
+kknn <- kknn(R1~.,
+data[-i,], data[i,],
+k=kvalue[j],
+kernel="optimal",
+distance=2,
+scale=TRUE)
+# predict and round
+ans <- round(fitted.values(kknn))
+ansList[i] = (ans == data[i,11])
+}
+scores[j] <- sum(ansList)/ length(ansList)
+}
+best_k <- kvalue[which(scores==max(scores))[1]]
+print("Best accuracy score: ")
+print(max(score))
+sprintf(max(score))
+print(max(scores))
+print("Best k-value: ")
+print(best_k)
+print("Best accuracy score: ")
+print(max(scores))
+print("Best k-value: ")
+pr
+best_k <- kvalue[which(scores==max(scores))[1]]
+print(best_k)
