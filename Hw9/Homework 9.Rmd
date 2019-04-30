@@ -1,0 +1,66 @@
+---
+title: "Homework 9"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 12.1
+  
+
+As a tv research analyst, I am currently looking at whether or not allowing compilations for our programs is beneficial to our online viewership. While they allow for more content, they may potentially be confusing viewers by seeing multiple programs with slightly different program names (e.g. "Show 1" vs "Show 1: Best Of").
+  
+By testing various naming schemes, we can find out whether we gain overall views, or even whether having compilations at all is detracting from the total views. 
+
+  
+  
+  
+  
+## 12.2
+  
+```{r}
+if (!require("FrF2"))
+install.packages('FrF2', repos='http://cran.us.r-project.org')
+```
+
+```{r}
+set.seed(42)
+combo <- FrF2(16,10)
+combo
+```
+
+The explanation is fairly simple - each of the factors from A through are binary variables. We have 16 combinations of which factors to keep.  
+If we look at the first combination, we keep {B, C, G, H,K}.  
+The combinations were chosen to never repeat between the 16, and also to try to have the most variability in interactions. For example, both A and B are included only in the 15th and 16th combinations. Considering that there are 2^10 = 1024 possible combinations, we have some overlap with other variables.
+
+
+## 13.1
+  
+### a.) Binomial
+#### Whether or not a movie will profit - basically, we can think of any binary question for the binomial distributions that a model such as logistic regression may solve.
+  
+### b.) Geometric
+#### At which day after release that the movie will break even - this may never happen since the movie may never break even, just like how a bat may never break during the experiment held by the class lecture example. However, outside of that, we can try to see when a specific production's movies tend to break even and find probability parameters based off of that.
+  
+### c.) Poisson
+#### The probability of a particular movie ticket (the golden ticket) being bought
+  
+### d.) Exponential
+#### How many regular tickets are bought before each of the several golden tickets being found
+  
+### e.) Weibull
+#### How long until a golden ticket is bought
+
+
+
+
+
+
+
+
+
+
